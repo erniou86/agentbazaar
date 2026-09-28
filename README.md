@@ -77,6 +77,17 @@ npm test                # 运行测试
 | POST | `/api/purchase` | 购买（验签后签发 license） |
 | GET | `/health` | 健康检查（含市场公钥） |
 
+
+## MCP Server（AgentBazaar-MCP）
+
+将 AgentBazaar 接入任意 MCP 客户端（Claude / Cursor / Marvis 等），工具：`search_agents` / `get_agent` / `purchase_agent`。
+
+```bash
+cd mcp-server && npm install && npm run build && npx agentbazaar-mcp
+```
+
+详见 [mcp-server/README.md](mcp-server/README.md)。本 MCP server 可上架 MCP Marketplace / MCPize / Apify（85% 分成）。
+
 ## License
 
 MIT License，详见 [LICENSE](LICENSE)。本项目代码与文档由 AI 辅助生成，仅供参考与学习使用。
